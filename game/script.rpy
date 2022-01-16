@@ -24,20 +24,20 @@ label start:
 
     # add menu of options
     menu:
-        "Go to the music store":
+        "Music store":
             jump store
         "Perform locally":
             jump local_gigs
-        "Go on a US Tour":
+        "US Tour":
             jump us_tour
-        "Go on an International Tour":
+        "International Tour":
             jump international_tour
 
     label store:
         scene music store with fade
         show jamal happy at right
         show jessica happy at left
-        Jamal "What should be buy today?"
+        Jamal "What should we buy today?"
         jump home
 
     label local_gigs:
