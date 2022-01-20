@@ -2,6 +2,7 @@
 
 define Jess = Character("Jessica")
 define Jamal = Character("Jamal")
+define gui.choice_button_text_idle_color = '#000000'
 
 
 image jessica happy = im.Flip("jessica happy.png", horizontal=True)
@@ -26,7 +27,7 @@ label start:
     menu:
         "Music store":
             jump store
-        "Perform locally":
+        "NYC Tour":
             jump local_gigs
         "US Tour":
             jump us_tour
