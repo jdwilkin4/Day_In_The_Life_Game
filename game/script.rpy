@@ -48,8 +48,17 @@ label start:
 
     label us_tour:
         show jamal happy at right with moveinright
-        Jamal "We are on the US tour"
-        jump home
+        Jamal "Where are we going again?"
+
+        menu:
+            "Los Angeles":
+                jump la
+            "Houston":
+                jump houston
+            "Chicago":
+                jump chicago
+            "Boston":
+                jump boston
 
     label international_tour:
         show jessica happy at left with moveinleft
