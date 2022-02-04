@@ -47,6 +47,8 @@ label start:
         jump home
 
     label us_tour:
+        scene airport with fade
+        show jessica happy at left with moveinleft
         show jamal happy at right with moveinright
         Jamal "Where are we going again?"
 
@@ -59,6 +61,35 @@ label start:
                 jump chicago
             "Boston":
                 jump boston
+
+    label la:
+        scene hollywood sign with fade
+        show jessica happy at left with moveinleft
+        Jess "We finally made it to LA!"
+        show jamal happy at right with moveinright
+        Jamal "This looks great! What should we do first?"
+        menu:
+            "Go to hotel":
+                jump la_hotel
+            "Head to gig":
+                jump la_gigs
+            "Sight see":
+                jump sight_see_la
+            "Network at jazz concert":
+                jump network_la
+        jump home
+
+    label houston:
+        show jamal happy at right
+        show jessica happy at left
+
+    label chicago:
+        show jamal happy at right
+        show jessica happy at left
+
+    label boston:
+        show jamal happy at right
+        show jessica happy at left
 
     label international_tour:
         show jessica happy at left with moveinleft

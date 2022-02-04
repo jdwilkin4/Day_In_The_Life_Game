@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 9: expected '=' not found.
-    define audio jazz = "jazz1.mp3"
-                 ^
+File "game/script.rpy", line 70: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Fri Dec  3 00:13:57 2021
+Thu Feb  3 22:26:54 2022
