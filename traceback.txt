@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 73, in script
-    jump la_hotel
-ScriptError: could not find label 'la_hotel'.
+  File "game/script.rpy", line 94, in script
+    scene chinese theatre with sight_see_fade
+TypeError: Fade() takes at least 3 arguments (3 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 73, in script
-    jump la_hotel
-  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/ast.py", line 1757, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/script.py", line 918, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'la_hotel'.
+  File "game/script.rpy", line 94, in script
+    scene chinese theatre with sight_see_fade
+  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/ast.py", line 1443, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/exports.py", line 1682, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/display/core.py", line 2752, in do_with
+    clear=clear)
+  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/display/core.py", line 3315, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/display/core.py", line 3674, in interact_core
+    new_widget=layers_root)
+  File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+TypeError: Fade() takes at least 3 arguments (3 given)
 
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.10.2178
 Day in the life Game 1.0
-Sat Feb 12 21:48:07 2022
+Sat Feb 12 22:56:49 2022

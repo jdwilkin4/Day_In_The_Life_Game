@@ -3,6 +3,9 @@
 define Jess = Character("Jessica")
 define Jamal = Character("Jamal")
 define gui.choice_button_text_idle_color = '#000000'
+define sight_see_dissolve = Dissolve(5.0)
+define sight_see_fade = Fade(0.5, 0.0, 5.0)
+
 
 
 image jessica happy = im.Flip("jessica happy.png", horizontal=True)
@@ -10,7 +13,6 @@ image jessica sad = im.Flip("jessica sad.png", horizontal=True)
 define audio.jazz = "audio/jazz.mp3"
 
 label start:
-
     scene nyc horizon with fade
     play music jazz loop
     show jessica happy at left with moveinleft
@@ -87,6 +89,20 @@ label start:
         Jess "Good night Jamal!"
         Jamal "Good night Jess!"
         jump home
+
+    label sight_see_la:
+        scene chinese theatre with sight_see_fade
+        scene griffith observatory with sight_see_dissolve
+        scene beverly hills with sight_see_dissolve
+        scene la beach with sight_see_dissolve
+        scene venice with sight_see_fade
+        show jessica happy at left with moveinleft
+        Jess "That was a great day of sight seeing"
+        show jamal happy at right with moveinright
+        Jamal "Yeah! There is so much to do in LA!"
+        Jess "Well, I am tired. Let's go back to the hotel"
+        Jamal "Sounds good"
+        jump la_hotel
 
 
     label houston:
