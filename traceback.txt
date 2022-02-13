@@ -1,14 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 72, in script
+  File "game/script.rpy", line 73, in script
     jump la_hotel
 ScriptError: could not find label 'la_hotel'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 72, in script
+  File "game/script.rpy", line 73, in script
     jump la_hotel
   File "/Volumes/renpy-7.4.10-sdk/renpy-7.4.10-sdk/renpy/ast.py", line 1757, in execute
     rv = renpy.game.script.lookup(target)
@@ -19,4 +19,4 @@ ScriptError: could not find label 'la_hotel'.
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.10.2178
 Day in the life Game 1.0
-Thu Feb  3 22:30:36 2022
+Sat Feb 12 21:48:07 2022

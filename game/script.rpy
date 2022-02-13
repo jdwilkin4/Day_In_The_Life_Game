@@ -79,6 +79,16 @@ label start:
                 jump network_la
         jump home
 
+    label la_hotel:
+        scene la hotel with fade
+        show jamal happy at right
+        show jessica happy at left
+        Jamal "Let's get some rest"
+        Jess "Good night Jamal!"
+        Jamal "Good night Jess!"
+        jump home
+
+
     label houston:
         show jamal happy at right
         show jessica happy at left
